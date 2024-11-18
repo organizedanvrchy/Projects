@@ -4,6 +4,8 @@ import time
 import random
 from hangman_words import word_list
 from hangman_art import HANGMANPICS
+from hangman_art import HANGMANLOGO
+
 
 # Main function to execute program
 def main():
@@ -19,8 +21,8 @@ def main():
     # Keep track of attempts left
     attempts_remaining = 6
 
-    print("Welcome to Hangman!")
-    input("Press enter to begin!")
+    print(HANGMANLOGO)
+    input("\nPress enter to begin!")
 
     while "_" in blank_word and attempts_remaining > 0:
         # Clear the terminal before displaying the next state
