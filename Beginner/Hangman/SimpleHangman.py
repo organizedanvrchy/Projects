@@ -6,7 +6,6 @@ from hangman_words import word_list
 from hangman_art import HANGMANPICS
 from hangman_art import HANGMANLOGO
 
-
 # Main function to execute program
 def main():
     # Pick a random word from list
