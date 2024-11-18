@@ -2,26 +2,11 @@
 import os
 import time
 import random
+from hangman_words import word_list
+from hangman_art import HANGMANPICS
 
 # Main function to execute program
 def main():
-    word_list = [
-    "aardvark", "baboon", "camel", "apple", "zoo", "business", "hello", "elephant", 
-    "giraffe", "hippopotamus", "kangaroo", "lion", "monkey", "ostrich", "panda", 
-    "quail", "rabbit", "snake", "tiger", "umbrella", "vulture", "whale", "xenon", 
-    "yellow", "zebra", "dinosaur", "computer", "keyboard", "programming", "internet", 
-    "python", "java", "algorithm", "data", "structure", "machine", "learning", 
-    "science", "robot", "artificial", "intelligence", "gadget", "smartphone", "tablet", 
-    "charger", "laptop", "camera", "headphones", "wireless", "network", "battery", 
-    "technology", "software", "hardware", "monitor", "printer", "scanner", "mammal", 
-    "reptile", "amphibian", "bird", "fish", "insect", "flower", "tree", "mountain", 
-    "ocean", "forest", "desert", "island", "continent", "planet", "star", "galaxy", 
-    "universe", "cosmos", "space", "astronaut", "rocket", "satellite", "telescope", 
-    "moon", "sun", "earth", "mars", "venus", "jupiter", "saturn", "neptune", "pluto", 
-    "mercury", "robotics", "cyber", "quantum", "physics", "chemistry", "biology", 
-    "astronomy", "geology", "meteorology", "geography", "history", "politics", "economics"
-    ]
-
     # Pick a random word from list
     chosen_word = random.choice(word_list)
 
@@ -111,58 +96,6 @@ def blank_replacer(word, blank, guess):
             blanks_list[i] = guess
 
     return ''.join(blanks_list)
-
-# Hangman Stages ASCII art
-HANGMANPICS = ['''
-  +---+
-  |   |
-      |
-      |
-      |
-      |
-=========''', '''
-  +---+
-  |   |
-  O   |
-      |
-      |
-      |
-=========''', '''
-  +---+
-  |   |
-  O   |
-  |   |
-      |
-      |
-=========''', '''
-  +---+
-  |   |
-  O   |
- /|   |
-      |
-      |
-=========''', '''
-  +---+
-  |   |
-  O   |
- /|\  |
-      |
-      |
-=========''', '''
-  +---+
-  |   |
-  O   |
- /|\  |
- /    |
-      |
-=========''', '''
-  +---+
-  |   |
-  O   |
- /|\  |
- / \  |
-      |
-=========''']
 
 # Run main
 if __name__ == "__main__":
