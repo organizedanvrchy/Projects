@@ -16,25 +16,35 @@ def game_runner(attempts):
         try:
             guess = int(input("\nMake a guess: "))
         except ValueError:
-            print("Invalid input. Please enter a number...")
+            print("\nInvalid input. Please enter a number...")
             continue
         
         attempts_remaining -= 1
         if guess < 0:
-            print("Too far below the range I'm thinking of!")
+            print("\nToo far below the range I'm thinking of!")
+            print(f"\nYou have {attempts_remaining} attempts remaining.")
             print("Try again...")
             continue
         elif guess > 100:
-            print("Too far above the range I'm thinking of!")
+            print("\nToo far above the range I'm thinking of!")
+            print(f"\nYou have {attempts_remaining} attempts remaining.")
             print("Try again...")
             continue
-        elif guess < target_num:
-            if attempts_remaining >= 1:
-                print("\nToo Low.\nGuess again...")
+        elif guess < target_num and attempts_remaining >= 1:
+            if abs(guess - target_num) < 10:
+                print("You are close but just below the number!")
+                print("Guess again...")
+                print(f"\nYou have {attempts_remaining} attempts remaining.")
+            else:
+                print("\nToo low. Guess again...")
                 print(f"\nYou have {attempts_remaining} attempts remaining.")
             continue
-        elif guess > target_num:
-            if attempts_remaining >= 1:
+        elif guess > target_num and attempts_remaining >= 1:
+            if abs(guess - target_num) < 10:
+                print("You are close but just above the number!")
+                print("Guess again...")
+                print(f"\nYou have {attempts_remaining} attempts remaining.")
+            else:
                 print("\nToo high. Guess again...")
                 print(f"\nYou have {attempts_remaining} attempts remaining.")
             continue
@@ -43,7 +53,6 @@ def game_runner(attempts):
             print(f"You found the number with {attempts_remaining} attempts remaining!")
             break
         else:
-            print("Invalid Entry.")
             break
         
     if attempts_remaining == 0 and guess != target_num:
