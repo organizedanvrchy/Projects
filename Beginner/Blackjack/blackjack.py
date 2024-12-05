@@ -9,7 +9,6 @@ def deal_card():
 def display_cards(player_cards, dealer_cards, reveal_dealer=False):
     # Displays the player's hand
     print(f"\nYour cards: {player_cards} - Score: {sum(player_cards)}")
-
     # Display dealer's first card only or entire hand (when necessary)
     if reveal_dealer:
         print(f"Dealer's cards: {dealer_cards} - Score: {sum(dealer_cards)}")
@@ -25,12 +24,11 @@ def dealer_ace_choice(dealer_score):
 def handle_ace(cards, player_or_dealer="player"):
     # Flag for ace changes
     ace_changed = False
-
     # Handle ace cards in player's or dealer's hand
     for i in range(len(cards)):
         if cards[i] == 1 or cards[i] == 11:
             if player_or_dealer == "player":
-                ace = input(f"\nThis {cards[i]} is an ACE card. Would you like to use it as a 1 or 11?\nEnter 1 or 11: ").strip()
+                ace = input(f"\nYou were dealt an ACE card. Would you like to use it as a 1 or 11?\nEnter 1 or 11: ").strip()
                 if ace == "1":
                     cards[i] = 1
                     ace_changed = True
@@ -57,14 +55,14 @@ def main():
         player_cards = [deal_card(), deal_card()]
         dealer_cards = [deal_card(), deal_card()]
 
-        display_cards(player_cards, dealer_cards)
-
         # Handle initial aces for player and dealer
         player_cards, player_ace_changed = handle_ace(player_cards, "player")
         dealer_cards, dealer_ace_changed = handle_ace(dealer_cards, "dealer")
 
         # Show cards again after ace handling
         if player_ace_changed or dealer_ace_changed:
+            display_cards(player_cards, dealer_cards)
+        else:
             display_cards(player_cards, dealer_cards)
 
         # Calculate player's and dealer's scores
@@ -83,9 +81,9 @@ def main():
             if hit_or_stand == "Y":
                 # Player Logic
                 player_next_card = deal_card()
-                print(f"\nYou were dealt a(n) {player_next_card}.")
+                if 1 < player_next_card < 11:
+                    print(f"\nYou were dealt a(n) {player_next_card}.")
                 player_cards.append(player_next_card)
-
                 # Handle new Aces dealt
                 if player_next_card == 1 or player_next_card == 11:
                     player_cards, player_ace_changed = handle_ace(player_cards, "player")
@@ -138,3 +136,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+    
