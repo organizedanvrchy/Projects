@@ -5,8 +5,9 @@ print("Welcome to the Number Guessing Game!")
 print("Guess the number exactly to win!")
 
 attempts = 0
-play = True
+guess = 0
 
+play = True
 while play:
     print("\nI'm thinking of a number between 1 and 100...")
     target_num = random.randint(1, 100)
@@ -15,8 +16,6 @@ while play:
 
     if difficulty == "easy":
         attempts = 10
-        guess = 0
-
         while attempts > 0:
             try:
                 guess = int(input("\nMake a guess: "))
@@ -57,8 +56,6 @@ while play:
 
     elif difficulty == "hard":
         attempts = 5
-        guess = 0
-        
         while attempts > 0:
             try:
                 guess = int(input("\nMake a guess: "))
