@@ -11,7 +11,6 @@ play = True
 while play:
     print("\nI'm thinking of a number between 1 and 100...")
     target_num = random.randint(1, 100)
-    print(target_num)
     difficulty = input("\nChoose a difficulty. Enter 'Easy' or 'Hard': ").lower()
 
     if difficulty == "easy":
