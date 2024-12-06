@@ -21,26 +21,33 @@ def dealer_ace_choice(dealer_score):
     else:
         return 1 
 
-def handle_ace(cards, player_or_dealer="player"):
-    # Flag for ace changes
+def handle_ace(cards, processed_aces, player_or_dealer="player"):
     ace_changed = False
-    # Handle ace cards in player's or dealer's hand
-    for i in range(len(cards)):
-        if cards[i] == 1 or cards[i] == 11:
+
+    for i, card in enumerate(cards):
+        if card in [1, 11] and i not in processed_aces:  # Check if the card is an unprocessed Ace
             if player_or_dealer == "player":
-                ace = input(f"\nYou were dealt an ACE card. Would you like to use it as a 1 or 11?\nEnter 1 or 11: ").strip()
-                if ace == "1":
-                    cards[i] = 1
-                    ace_changed = True
-                elif ace == "11":
-                    cards[i] = 11
-                    ace_changed = True
+                while True:
+                    ace = input(f"\nYou were dealt an ACE card. Would you like to use it as a 1 or 11?\nEnter 1 or 11: ").strip()
+                    if ace in ["1", "11"]:
+                        cards[i] = int(ace)
+                        ace_changed = True
+                        processed_aces.add(i)  # Mark this Ace as processed
+                        break
+                    else:
+                        print("\nInvalid choice. Please enter 1 or 11.")
             elif player_or_dealer == "dealer":
                 cards[i] = dealer_ace_choice(sum(cards))
                 ace_changed = True
+                processed_aces.add(i)  # Mark this Ace as processed
+
     return cards, ace_changed
 
+
 def main():
+    player_processed_aces = set()
+    dealer_processed_aces = set()
+
     user_choice = input("\nWelcome. Would you like to play BlackJack? Y or N: ").upper()
     if user_choice != "Y":
         print("\nThank you. Goodbye...\n")
@@ -56,8 +63,8 @@ def main():
         dealer_cards = [deal_card(), deal_card()]
 
         # Handle initial aces for player and dealer
-        player_cards, player_ace_changed = handle_ace(player_cards, "player")
-        dealer_cards, dealer_ace_changed = handle_ace(dealer_cards, "dealer")
+        player_cards, player_ace_changed = handle_ace(player_cards, player_processed_aces, "player")
+        dealer_cards, dealer_ace_changed = handle_ace(dealer_cards, dealer_processed_aces, "dealer")
 
         # Show cards again after ace handling
         if player_ace_changed or dealer_ace_changed:
@@ -71,8 +78,7 @@ def main():
 
         # Check if player intially busts
         if player_score > 21:
-            print(f"\nYour hand is {player_cards} with a score of : {player_score}!")
-            print("Bust! You lose...")
+            print("\nBust! You lose...")
             play = False
 
         hit = True
@@ -86,7 +92,7 @@ def main():
                 player_cards.append(player_next_card)
                 # Handle new Aces dealt
                 if player_next_card == 1 or player_next_card == 11:
-                    player_cards, player_ace_changed = handle_ace(player_cards, "player")
+                    player_cards, player_ace_changed = handle_ace(player_cards, player_processed_aces, "player")
 
                 display_cards(player_cards, dealer_cards)
 
@@ -94,10 +100,14 @@ def main():
 
                 # Check if player busts after new card
                 if player_score > 21:
-                    print(f"\nYour hand is {player_cards} with a score of : {player_score}!")
-                    print("Bust! You lose...")
+                    print("\nBust! You lose...")
                     hit = False
 
+                # Check if player has a 5 Card Charlie
+                if len(player_cards) == 5 and player_score <= 21:
+                    print("\nFive Card Charlie! You Win!")
+                    hit = False
+                    
             elif hit_or_stand == "N":
                 hit = False
             else:
@@ -111,22 +121,20 @@ def main():
 
             # Handle new Aces dealt
             if dealer_next_card == 1 or dealer_next_card == 11:
-                dealer_cards, dealer_ace_changed = handle_ace(dealer_cards, "dealer")
+                dealer_cards, dealer_ace_changed = handle_ace(dealer_cards, dealer_processed_aces, "dealer")
             dealer_score = sum(dealer_cards)
             
         display_cards(player_cards, dealer_cards, reveal_dealer=True)
         
         # Win/Lose Conditions
-        if player_score > 21:
-            print("\nBust! You Lose...")
+        if player_score> 21:
+            break
         elif dealer_score > 21:
             print("\nDealer Busts! You Win.")
-        elif player_score > dealer_score:
+        elif player_score > dealer_score and player_score <= 21:
             print("\nCongratulations! You Win!")
         elif player_score == dealer_score:
             print(f"\nIt's a Draw! You both scored: {player_score}")
-        else:
-            print("\nYou Lose...")
 
         play_again = input("\nWould you like to play again? Y or N: ").upper()
         if play_again != "Y":
@@ -136,4 +144,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-    
