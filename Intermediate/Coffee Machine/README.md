@@ -1,4 +1,4 @@
-# Coffee Machine OS Simulation ☕️
+# Coffee Machine Simulation ☕️
 
 A Python-based coffee vending machine simulation that offers a realistic and interactive user experience. Select your favorite drink, manage resources, and enjoy a fully automated workflow!
 
