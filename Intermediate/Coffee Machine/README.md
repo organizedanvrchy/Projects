@@ -34,7 +34,7 @@ A Python-based coffee vending machine simulation that offers a realistic and int
 - **Language**: Python 🐍
 - **Modules**:
   - `menu` for drink definitions.
-  - `resources` for tracking ingredients and money.
+  - `resources` for tracking ingredients.
 - **Platform Support**:
   - Cross-platform compatibility with `os` and `platform`.
 
