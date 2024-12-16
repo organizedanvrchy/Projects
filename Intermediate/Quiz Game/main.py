@@ -60,7 +60,7 @@ def main():
 
     display_categories(categories)
 
-    # Get user input for category and difficulty
+    # Get user input for category
     try:
         category = int(input("\nEnter the category ID: "))
         if category not in categories:
