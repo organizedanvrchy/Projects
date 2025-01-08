@@ -1,3 +1,4 @@
+import Sidebar from "@/components/ui/Sidebar";
 import React from "react";
 
 export default function MainLayout({
@@ -10,6 +11,7 @@ export default function MainLayout({
         <main className="md:pl-60 pt-36">
             <div>{children}</div>
         </main>
+        <Sidebar className='translate-x-0' />
     </>
     );
 }
