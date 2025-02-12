@@ -16,9 +16,9 @@ Ensure you have Python and the required libraries installed. This project uses t
    ```
 2. **Install required libraries**: <br>
   If you haven't installed pandas, run:
-  ```sh
-  pip install pandas
-  ```
+     ```sh
+     pip install pandas
+     ```
 3. **Run the script**:
    ```sh
    python main.py
