@@ -29,7 +29,10 @@ After running the script, you will find a new file squirrel_count.csv that conta
 ---
 
 ## Notes
-🐿️ Fur Color Count – <br> The script counts the number of squirrels for each fur color (Gray, Black, Cinnamon). <br>
-📊 CSV Output – <br> The results are saved in a CSV file (squirrel_count.csv) for further analysis or visualization. <br>
-⚡ Efficient Calculation – <br> The script uses both a direct filtering approach (via pandas) and an alternative for loop method to count the squirrels, with the direct approach being the more efficient solution. <br>
-📅 Dataset – <br> Uses the 2018 Central Park Squirrel Census data for analysis. <br>
+**Fur Color Count** – The script counts the number of squirrels for each fur color (Gray, Black, Cinnamon). <br>
+
+**CSV Output** – The results are saved in a CSV file (squirrel_count.csv) for further analysis or visualization. <br>
+
+**Efficient Calculation** – The script uses both a direct filtering approach (via pandas) and an alternative for loop method to count the squirrels, with the direct approach being the more efficient solution. <br>
+
+**Dataset** – Uses the 2018 Central Park Squirrel Census data for analysis. <br>
