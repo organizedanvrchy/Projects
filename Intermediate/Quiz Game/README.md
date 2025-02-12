@@ -1,2 +1,3 @@
-# Overview
+# Quiz Game
+## Overview
 This is a simple quiz game that pulls 10* questions from Open Trivia DB by creating a custom API url using the OTDB format. This game will simply ask the user 10 True/False questions and report if the user was correct or not and display the current user score and eventually display the overall score at the end of the quiz. This was an initial attempt at OOP to help simplify code adjustments through modularization. 
