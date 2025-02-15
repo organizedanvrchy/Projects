@@ -38,14 +38,9 @@ def main():
 
         # Exit
         if answer_state_formatted == "Exit":
-            missed_states = []
-            for state in states_list:
-                if state not in guessed_states:
-                    missed_states.append(state)
-
+            missed_states = [state for state in states_list if state not in guessed_states]
             game_results = pd.DataFrame(missed_states)
             game_results.to_csv("states_missed.csv")
-
             break
 
         # Check User Input Against Data
