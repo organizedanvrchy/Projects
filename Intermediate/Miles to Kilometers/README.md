@@ -2,11 +2,13 @@
 A simple GUI-based application built using Python's Tkinter library. It allows users to convert miles into kilometers with a single button click.
 
 ## How to Run
+### Prerequisites
+Ensure you have Python installed (Python 3 recommended).
 
-1. Ensure you have Python installed (Python 3 recommended).
-2. Copy the script into a `.py` file (e.g., `converter.py`).
-3. Open a terminal or command prompt in the directory containing the script.
-4. Run the script using the command:
+### Steps
+1. Copy the script into a `.py` file (e.g., `converter.py`).
+2. Open a terminal or command prompt in the directory containing the script.
+3. Run the script using the command:
    
    ```sh
    python converter.py
