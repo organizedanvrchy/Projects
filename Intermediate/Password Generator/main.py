@@ -9,10 +9,11 @@ def generator():
     # Generate list of uppercase and lowercase letters
     alphabet_low = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
     alphabet_up = [x.upper() for x in alphabet_low]
-    letter_list = alphabet_low + alphabet_up
+    symbols = ['!', '?', "$", "#", "&"]
+    letter_list = alphabet_low + alphabet_up + symbols
 
     # Generate of string of specified length with random selection of letters and numbers
-    length = 10
+    length = 15
     random_password = ''.join(random.choice(letter_list + [str(i) for i in range(1, 10)]) for _ in range(length))
     password_entry.insert(0, random_password)
 
