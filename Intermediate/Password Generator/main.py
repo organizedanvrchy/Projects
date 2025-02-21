@@ -33,7 +33,7 @@ def save_data():
         if is_ok:
             # Save user entries to .txt file
             with open("data.txt", "a") as file:
-                file.write(f"{website} | {email} | {password}")
+                file.write(f"{website} | {email} | {password} \n")
             
             # Clear all fields
             website_entry.delete(0, END)
