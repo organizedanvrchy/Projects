@@ -1,6 +1,7 @@
 from tkinter import *
 from tkinter import messagebox
 import random
+import json
 
 def generator():
     # Clear password field (if already populated)
@@ -23,25 +24,44 @@ def save_data():
     email = email_entry.get()
     password = password_entry.get()
 
+    # Create Dictionary to store data in .json file
+    new_data = {
+        website: {
+            "email": email,
+            "password": password,
+        }
+    }
+
     # Check if fields are empty
     if len(website) == 0 or len(email) == 0 or len(password) == 0:
         messagebox.showerror(title="Error", message="Do not leave a field empty!")
 
     # Otherwise, ask user for confirmation and save data 
     else:
-        is_ok = messagebox.askokcancel(title=website, message=f"Details entered: \nEmail: {email} \nPassword: {password} \nWould you like to save?")
-        if is_ok:
-            # Save user entries to .txt file
-            with open("data.txt", "a") as file:
-                file.write(f"{website} | {email} | {password} \n")
-            
+        try:
+            # Check for existing .json
+            with open("data.json", "r") as file:
+                # Read existing data
+                data = json.load(file)          
+        
+        except FileNotFoundError:
+            messagebox.showinfo(title="Warning", message="Data file does not exist. Creating file...")
+            # Save user entries to .json file
+            with open("data.json", "w") as file:
+                json.dump(new_data, file, indent=4)
+        
+        else:
+            # Update file with new data
+            data.update(new_data)
+
+            # Save updated entries to .json file
+            with open("data.json", "w") as file:
+                json.dump(data, file, indent=4) 
+
+        finally:
             # Clear all fields
             website_entry.delete(0, END)
-            email_entry.delete(0, END)
-            password_entry.delete(0, END)
-
-            # Repopulate email/username field with default text
-            email_entry.insert(0, "example@email.com")
+            password_entry.delete(0, END)   
 
 # Main
 window = Tk()
