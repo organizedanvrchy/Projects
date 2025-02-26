@@ -2,6 +2,7 @@ from tkinter import *
 from tkinter import messagebox
 import random
 import json
+import string
 
 def generator():
     # Clear password field (if already populated)
@@ -17,6 +18,27 @@ def generator():
     length = 15
     random_password = ''.join(random.choice(letter_list + [str(i) for i in range(1, 10)]) for _ in range(length))
     password_entry.insert(0, random_password)
+
+def searcher():
+    # Grab user entry and ensure it matches with stored data key format
+    website = website_entry.get()
+    website = string.capwords(website)
+    
+    try:
+        # Check for existing .json
+        with open("data.json", "r") as file:
+            # Read existing data
+            data = json.load(file)
+            if website in data:
+                # Grab email and password from .json file and display them
+                email = data[website]["email"]
+                password = data[website]["password"]
+                messagebox.showinfo(title=f"{website}", message=f"Email: {email}\nPassword: {password}")
+            else:
+                messagebox.showerror(title="Error", message=f"{website} not found in data file")
+
+    except FileNotFoundError:
+        messagebox.showerror(title="Warning", message="Data file does not exist")
 
 def save_data():
     # Get user entries for each field
@@ -77,9 +99,12 @@ canvas.grid(column=1, row=0)
 website_label = Label(text="Website:", font=("Lexend", 10, "bold"))
 website_label.grid(column=0, row=1)
 
-website_entry = Entry(width=40)
-website_entry.grid(column=1, row=1, columnspan=2)
+website_entry = Entry(width=22)
+website_entry.grid(column=1, row=1)
 website_entry.focus()
+
+search_button = Button(text="Search", width=16, command=searcher)
+search_button.grid(column=2, row=1)
 
 # Second Row
 email_label = Label(text="Email/Username:", font=("Lexend", 10, "bold"))
