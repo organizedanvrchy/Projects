@@ -2,14 +2,6 @@
 
 ---
 
-## Table of Contents
-- [About](#about)
-- [Projects](#projects)
-- [Contributing](#contributing)
-- [License](#license)
-
----
-
 ## About
 This repository is simply a collection of links to my projects, each demonstrating different programming languages, frameworks, and tools that I've learned along the way on my coding journey. The purpose of this repository is to provide an easy way to access and track my progress across multiple repositories.
 
