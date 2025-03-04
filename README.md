@@ -23,7 +23,7 @@ Below is a table listing all the projects in this repository, along with their p
 | [Instruction Set Project - CIS655](https://github.com/organizedanvrchy/cis-655-instruction-set)        | C++               | 2024-10-15    | 2025-03-03   |
 | [Miles to Kilometers](https://github.com/organizedanvrchy/Miles-to-Kilometers-Converter)        | Python               | 2025-02-18    | 2025-02-18   |
 | [Number Guessing Game](https://github.com/organizedanvrchy/Number-Guessing-Game)        | Python               | 2024-12-05    | 2024-12-05    |
-| [Object Oriented Design Project- CIS687](https://github.com/organizedanvrchy/Object-Oriented-Design-Project)        | C++              | 2024-04-08    | 2025-03-04   |
+| [Object Oriented Design Project - CIS687](https://github.com/organizedanvrchy/Object-Oriented-Design-Project)        | C++              | 2024-04-08    | 2025-03-04   |
 | [Password Generator](https://github.com/organizedanvrchy/Simple-Password-Generator)        | Python               | 2024-11-15    | 2024-11-15   |
 | [Password Manager](https://github.com/organizedanvrchy/Password-Manager)        | Python               | 2025-02-26    | 2025-02-26   |
 | [Pomodoro](https://github.com/organizedanvrchy/Pomodoro)        | Python               | 2025-02-20    | 2025-02-20   |
