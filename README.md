@@ -11,7 +11,7 @@
 ---
 
 ## About
-This repository is simply a collection of my projects, each demonstrating different programming languages, frameworks, and tools that I've learned along the way on my coding journey. Whether you're a developer looking for inspiration or a learner exploring new technologies, this repository has something for you.
+This repository is simply a collection of links to my projects, each demonstrating different programming languages, frameworks, and tools that I've learned along the way on my coding journey. The purpose of this repository is to provide an easy way to access and track my progress across multiple repositories.
 
 ---
 
