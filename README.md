@@ -20,6 +20,7 @@ Below is a table listing all the projects in this repository, along with their p
 | [Etch-A-Sketch](https://github.com/organizedanvrchy/Etch-A-Sketch)        | Python               | 2024-12-30    | 2025-02-12   |
 | [Gadgets Selling App](https://github.com/organizedanvrchy/Gadgets-App)        | TypeScript               | 2025-03-03    | 2025-03-03   |
 | [Hangman](https://github.com/organizedanvrchy/Hangman)        | Python               | 2024-11-17    | 2024-11-18   |
+| [Instruction Set](https://github.com/organizedanvrchy/cis-655-instruction-set)        | C++               | 2024-10-15    | 2025-03-03   |
 | [Miles to Kilometers](https://github.com/organizedanvrchy/Miles-to-Kilometers-Converter)        | Python               | 2025-02-18    | 2025-02-18   |
 | [Number Guessing Game](https://github.com/organizedanvrchy/Number-Guessing-Game)        | Python               | 2024-12-05    | 2024-12-05    |
 | [Password Generator](https://github.com/organizedanvrchy/Simple-Password-Generator)        | Python               | 2024-11-15    | 2024-11-15   |
