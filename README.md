@@ -3,8 +3,8 @@
 ---
 
 ## Table of Contents
-- [About the Repository](#about-the-repository)
-- [Projects Table](#projects-table)
+- [About](#about)
+- [Projects](#projects)
 - [Contributing](#contributing)
 - [License](#license)
 
