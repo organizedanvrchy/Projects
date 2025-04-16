@@ -10,33 +10,228 @@ This repository is simply a collection of links to my projects, each demonstrati
 ## Projects
 Below is a table listing all the projects in this repository, along with their programming languages, creation dates, and last update dates.
 
-| Project Name          | Programming Language | Creation Date | Last Updated |
-|-----------------------|----------------------|---------------|--------------|
-| [Adventure Game](https://github.com/organizedanvrchy/Adventure-Game)        | Python               | 2024-11-18    | 2024-11-18   |
-| [Blackjack](https://github.com/organizedanvrchy/Blackjack)        | Python               | 2024-12-05    | 2024-12-05   |
-| [Blind Auction](https://github.com/organizedanvrchy/Blind-Auction)        | Python               | 2024-11-23    | 2024-11-23   |
-| [Caesar Cipher](https://github.com/organizedanvrchy/Caesar-Cipher)        | Python               | 2024-11-20    | 2024-11-20   |
-| [Coffee Machine](https://github.com/organizedanvrchy/Coffee-Machine)        | Python               | 2024-12-10    | 2024-12-10   |
-| [Etch-A-Sketch](https://github.com/organizedanvrchy/Etch-A-Sketch)        | Python               | 2024-12-30    | 2025-02-12   |
-| [Gadgets Selling App](https://github.com/organizedanvrchy/Gadgets-App)        | TypeScript               | 2025-03-03    | 2025-03-03   |
-| [Hangman](https://github.com/organizedanvrchy/Hangman)        | Python               | 2024-11-17    | 2024-11-18   |
-| [Instruction Set Project - CIS655](https://github.com/organizedanvrchy/cis-655-instruction-set)        | C++               | 2024-10-15    | 2025-03-03   |
-| [Miles to Kilometers](https://github.com/organizedanvrchy/Miles-to-Kilometers-Converter)        | Python               | 2025-02-18    | 2025-02-18   |
-| [Number Guessing Game](https://github.com/organizedanvrchy/Number-Guessing-Game)        | Python               | 2024-12-05    | 2024-12-05    |
-| [Object Oriented Design Project - CIS687](https://github.com/organizedanvrchy/Object-Oriented-Design-Project)        | C++              | 2024-04-08    | 2025-03-04   |
-| [Password Generator](https://github.com/organizedanvrchy/Simple-Password-Generator)        | Python               | 2024-11-15    | 2024-11-15   |
-| [Password Manager](https://github.com/organizedanvrchy/Password-Manager)        | Python               | 2025-02-26    | 2025-02-26   |
-| [Pomodoro](https://github.com/organizedanvrchy/Pomodoro)        | Python               | 2025-02-20    | 2025-02-20   |
-| [Pong](https://github.com/organizedanvrchy/Pong)        | Python               | 2025-01-02    | 2025-03-03   |
-| [Quiz Game](https://github.com/organizedanvrchy/Quiz-Game)        | Python               | 2024-12-16    | 2025-02-12   |
-| [RockPaperScissors](https://github.com/organizedanvrchy/Rock-Paper-Scissors)        | Python               | 2024-11-17    | 2024-11-17   |
-| [Snake](https://github.com/organizedanvrchy/Snake)        | Python               | 2025-01-01    | 2025-02-12   |
-| [Squirrel Census](https://github.com/organizedanvrchy/Squirrel-Census)        | Python               | 2025-02-11    | 2025-02-12   |
-| [TicTacToe](https://github.com/organizedanvrchy/TicTacToe)        | C               | 2024-11-20    | 2024-11-20   |
-| [To-Do](https://github.com/organizedanvrchy/To-Do-App)        | Python               | 2024-11-20    | 2024-11-20   |
-| [Turtle Race](https://github.com/organizedanvrchy/Turtle-Race)        | Python               | 2024-12-30    | 2025-02-12   |
-| [U.S. States Game](https://github.com/organizedanvrchy/U.S.-States-Game)        | Python               | 2025-02-12    | 2025-02-15   |
-| [YouTube Clone](https://github.com/organizedanvrchy/Youtube-Clone)        | TypeScript               | 2025-01-07    | 2025-01-15   |
+<table>
+  <tbody>
+    <thead>
+      <!-- Advanced Projects -->
+      <tr>
+        <th colspan="4" style="text-align: center; font-size: 1.2em; background-color: #f0f0f0;">Advanced Projects</th>
+      </tr>
+      <tr>
+        <th style="width: 40%;">Project Name</th>
+        <th style="width: 20%;">Programming Language</th>
+        <th style="width: 20%;">Creation Date</th>
+        <th style="width: 20%;">Last Updated</th>
+      </tr>
+    </thead>
+    <tr>
+      <td><a href="https://github.com/organizedanvrchy/Chess">Chess w/ AI Opp</a></td>
+      <td>Python</td>
+      <td>2025-03-05</td>
+      <td>2025-03-05</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/organizedanvrchy/Face-Authentication-for-POS-Systems">(CIS663) Face Authentication Project</a></td>
+      <td>Python</td>
+      <td>2025-02-01</td>
+      <td>2025-03-14</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/organizedanvrchy/cis-655-instruction-set">(CIS655) Instruction Set Project</a></td>
+      <td>C++</td>
+      <td>2024-10-15</td>
+      <td>2025-03-03</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/organizedanvrchy/Object-Oriented-Design-Project">(CIS687) Object Oriented Design Project</a></td>
+      <td>C++</td>
+      <td>2024-04-08</td>
+      <td>2025-03-04</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/organizedanvrchy/Gadgets-App">Gadgets Selling App**</a></td>
+      <td>TypeScript</td>
+      <td>2025-03-03</td>
+      <td>2025-04-12</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/organizedanvrchy/Youtube-Clone">YouTube Clone</a></td>
+      <td>TypeScript</td>
+      <td>2025-01-07</td>
+      <td>2025-01-15</td>
+    </tr>
+    <thead>
+      <!-- Blank Row -->
+      <tr>
+        <td colspan="4" style="height: 10px;"></td>
+      </tr>
+      <!-- Intermediate Projects -->
+      <tr>
+        <th colspan="4" style="text-align: center; font-size: 1.2em; background-color: #f0f0f0;">Intermediate Projects</th>
+      </tr>
+      <tr>
+        <th style="width: 40%;">Project Name</th>
+        <th style="width: 20%;">Programming Language</th>
+        <th style="width: 20%;">Creation Date</th>
+        <th style="width: 20%;">Last Updated</th>
+      </tr>
+    </thead>
+    <tr>
+      <td><a href="https://github.com/organizedanvrchy/Etch-A-Sketch">Etch-A-Sketch</a></td>
+      <td>Python</td>
+      <td>2024-12-30</td>
+      <td>2025-02-12</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/organizedanvrchy/Password-Manager">Password Manager</a></td>
+      <td>Python</td>
+      <td>2025-02-26</td>
+      <td>2025-02-26</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/organizedanvrchy/Pomodoro">Pomodoro</a></td>
+      <td>Python</td>
+      <td>2025-02-20</td>
+      <td>2025-02-20</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/organizedanvrchy/Pong">Pong</a></td>
+      <td>Python</td>
+      <td>2025-01-02</td>
+      <td>2025-03-03</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/organizedanvrchy/Quiz-Game">Quiz Game</a></td>
+      <td>Python</td>
+      <td>2024-12-16</td>
+      <td>2025-02-12</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/organizedanvrchy/Snake">Snake</a></td>
+      <td>Python</td>
+      <td>2025-01-01</td>
+      <td>2025-02-12</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/organizedanvrchy/Spanish-Flashcards-App">Spanish-Flashcards-App</a></td>
+      <td>Python</td>
+      <td>2025-03-25</td>
+      <td>2025-03-27</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/organizedanvrchy/TicTacToe">TicTacToe</a></td>
+      <td>C</td>
+      <td>2024-11-20</td>
+      <td>2024-11-20</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/organizedanvrchy/To-Do-App">To-Do</a></td>
+      <td>Python</td>
+      <td>2024-11-20</td>
+      <td>2024-11-20</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/organizedanvrchy/To-Do-Web-App">To-Do - Web App</a></td>
+      <td>Python</td>
+      <td>2025-03-06</td>
+      <td>2025-03-20</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/organizedanvrchy/Turtle-Race">Turtle Race</a></td>
+      <td>Python</td>
+      <td>2024-12-30</td>
+      <td>2025-02-12</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/organizedanvrchy/U.S.-States-Game">U.S. States Game</a></td>
+      <td>Python</td>
+      <td>2025-02-12</td>
+      <td>2025-02-15</td>
+    </tr>
+    <thead>
+      <!-- Blank Row -->
+      <tr>
+        <td colspan="4" style="height: 10px;"></td>
+      </tr>
+      <!-- Beginner Projects -->
+      <tr>
+        <th colspan="4" style="text-align: center; font-size: 1.2em; background-color: #f0f0f0;">Beginner Projects</th>
+      </tr>
+      <tr>
+        <th style="width: 40%;">Project Name</th>
+        <th style="width: 20%;">Programming Language</th>
+        <th style="width: 20%;">Creation Date</th>
+        <th style="width: 20%;">Last Updated</th>
+      </tr>
+    </thead>
+    <tr>
+      <td><a href="https://github.com/organizedanvrchy/Adventure-Game">Adventure Game</a></td>
+      <td>Python</td>
+      <td>2024-11-18</td>
+      <td>2024-11-18</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/organizedanvrchy/Blackjack">Blackjack</a></td>
+      <td>Python</td>
+      <td>2024-12-05</td>
+      <td>2024-12-05</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/organizedanvrchy/Blind-Auction">Blind Auction</a></td>
+      <td>Python</td>
+      <td>2024-11-23</td>
+      <td>2024-11-23</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/organizedanvrchy/Caesar-Cipher">Caesar Cipher</a></td>
+      <td>Python</td>
+      <td>2024-11-20</td>
+      <td>2024-11-20</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/organizedanvrchy/Coffee-Machine">Coffee Machine</a></td>
+      <td>Python</td>
+      <td>2024-12-10</td>
+      <td>2024-12-10</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/organizedanvrchy/Hangman">Hangman</a></td>
+      <td>Python</td>
+      <td>2024-11-17</td>
+      <td>2024-11-18</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/organizedanvrchy/Miles-to-Kilometers-Converter">Miles to Kilometers</a></td>
+      <td>Python</td>
+      <td>2025-02-18</td>
+      <td>2025-02-18</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/organizedanvrchy/Number-Guessing-Game">Number Guessing Game</a></td>
+      <td>Python</td>
+      <td>2024-12-05</td>
+      <td>2024-12-05</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/organizedanvrchy/Simple-Password-Generator">Password Generator</a></td>
+      <td>Python</td>
+      <td>2024-11-15</td>
+      <td>2024-11-15</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/organizedanvrchy/Rock-Paper-Scissors">RockPaperScissors</a></td>
+      <td>Python</td>
+      <td>2024-11-17</td>
+      <td>2024-11-17</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/organizedanvrchy/Squirrel-Census">Squirrel Census</a></td>
+      <td>Python</td>
+      <td>2025-02-11</td>
+      <td>2025-02-12</td>
+    </tr>
+  </tbody>
+</table>
 
 ---
 
